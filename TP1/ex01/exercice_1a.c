@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define N 10
-ibdjsqgdgsbd
+
 
 float *descente(float A[N][N], float B[N], int n)
 {
