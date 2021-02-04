@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define N 10
-
+ibdjsqgdgsbd
 
 float *descente(float A[N][N], float B[N], int n)
 {
@@ -14,7 +14,14 @@ float *descente(float A[N][N], float B[N], int n)
 
   /******Implement the solution here******/
   /***************************************/
-  
+  x[0]=B[0]/A[0][0];
+  for(int i=1; i<n;i++){
+    float s=0;
+    for(int j=0; j<=i-1; j++){
+            s=s+A[i][j]*x[j];
+    }
+    x[i]=(B[i]-s)/A[i][i];
+    }    
   /****************************************/
 
   return (x);
